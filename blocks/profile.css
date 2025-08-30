@@ -1,0 +1,44 @@
+.profile {
+  display: flex;
+  padding: 34px 0 20px;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+  flex-direction: row;
+}
+
+.profile__avatar {
+  margin-right: 20px;
+  border-radius: 16px;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name {
+  margin: 0 0 12px;
+}
+
+.profile__description {
+  margin: 0;
+}
+
+.profile__edit-btn {
+  margin-top: auto;
+  gap: 8px;
+  opacity: 70%;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.profile__add-btn {
+  margin-left: auto;
+  background-color: #212121;
+  color: #fcf5e5;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+}

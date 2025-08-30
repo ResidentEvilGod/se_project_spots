@@ -1,0 +1,9 @@
+.card__image {
+  height: 413px;
+  width: 413px;
+  object-fit: cover;
+}
+
+.card__like-btn {
+  background-image: url(../images/Heart.svg);
+}
