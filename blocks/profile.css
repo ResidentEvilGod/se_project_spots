@@ -76,6 +76,20 @@
   padding: 18px 32px;
 }
 
+.profile__add-btn:hover {
+  color: #212121;
+  opacity: 80%;
+}
+
+.profile__edit-btn:hover {
+  text-decoration-color: #212121;
+}
+
+.profile__like-btn:hover {
+  opacity: 100%;
+  color: #212121;
+}
+
 @media screen and (max-width: 627px) {
   .profile {
     flex-direction: column;
