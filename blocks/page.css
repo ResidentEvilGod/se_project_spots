@@ -1,5 +1,6 @@
 .page {
   background-color: #fcf5e5;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  min-height: 100vh;
 }
