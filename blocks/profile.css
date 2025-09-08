@@ -74,6 +74,8 @@
   width: 180px;
   height: 60px;
   padding: 18px 32px;
+  display: flex;
+  justify-content: center;
 }
 
 .profile__add-btn:hover {
@@ -129,6 +131,7 @@
   }
 
   .profile__edit-btn {
+    display: flex;
     justify-content: center;
   }
 }
