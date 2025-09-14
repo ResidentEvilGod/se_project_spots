@@ -84,7 +84,7 @@ function handleAddCardSubmit(evt) {
   newPostModal.classList.remove("modal_is-opened");
 }
 editPostFormEl.addEventListener("submit", handleAddCardSubmit);
-editprofileFormEl.addEventListener("submit", handleProfileFormSubmit);
+editProfileFormEl.addEventListener("submit", handleProfileFormSubmit);
 
 initialCards.forEach(function (card) {
   console.log(card.name);
