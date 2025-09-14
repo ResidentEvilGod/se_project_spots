@@ -40,10 +40,8 @@ const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const editPostFormEl = newPostModal.querySelector(".modal__form");
-const editPostImageInput = editPostImage.querySelector("#card-image-input");
-const editPostCaptionInput = editPostCaption.querySelector(
-  "#card-image-caption"
-);
+const editPostImageInput = newPostModal.querySelector("#card-image-input");
+const editPostCaptionInput = newPostModal.querySelector("#card-image-caption");
 
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
