@@ -45,8 +45,8 @@ const editPostCaptionInput = newPostModal.querySelector("#card-image-caption");
 
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
-const postImageEl = document.querySelector(".post__image");
-const postCaptionEl = document.querySelector(".post__caption");
+const postImageEl = document.querySelector(".card__image");
+const postCaptionEl = document.querySelector(".card__title");
 
 editProfileBtn.addEventListener("click", function () {
   editProfileModal.classList.add("modal_is-opened");
@@ -60,7 +60,8 @@ editProfileCloseBtn.addEventListener("click", function () {
 
 newPostBtn.addEventListener("click", function () {
   newPostModal.classList.add("modal_is-opened");
-  editPostImageInput.value = postImageEl.textContent;
+  editPostImageInput.value = postImageEl ? postImageEl.src : "";
+  if (postImageEl) postImageEl.src = editPostImageInput.value.trim();
   editPostCaptionInput.value = postCaptionEl.textContent;
 });
 
@@ -78,7 +79,8 @@ function handleProfileFormSubmit(evt) {
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  postImageEl.textContent = editPostImageInput.value;
+  editPostImageInput.value = postImageEl ? postImageEl.src : "";
+  if (postImageEl) postImageEl.src = editPostImageInput.value.trim();
   postCaptionEl.textContent = editPostCaptionInput.value;
 
   newPostModal.classList.remove("modal_is-opened");
