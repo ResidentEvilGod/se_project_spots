@@ -15,6 +15,7 @@
 
 .modal_is-opened {
   visibility: visible;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
 .modal__container {
@@ -57,7 +58,7 @@
   padding: 24px;
   border-radius: 8px;
   box-sizing: border-box;
-  border: 1px #21212140;
+  border: 1px #21212140 solid;
 }
 
 .modal__input::placeholder {

@@ -81,7 +81,6 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
   editPostImageInput.value = postImageEl ? postImageEl.src : "";
   if (postImageEl) postImageEl.src = editPostImageInput.value.trim();
-  postCaptionEl.textContent = editPostCaptionInput.value;
 
   newPostModal.classList.remove("modal_is-opened");
 }
