@@ -48,41 +48,47 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 const postImageEl = document.querySelector(".card__image");
 const postCaptionEl = document.querySelector(".card__title");
 
+function openModal(modal) {
+  modal.classList.add("modal_is-open");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-open");
+}
+
 editProfileBtn.addEventListener("click", function () {
-  editProfileModal.classList.add("modal_is-opened");
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
+  openModal(editProfileModal);
 });
 
 editProfileCloseBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
   editPostImageInput.value = postImageEl ? postImageEl.src : "";
   if (postImageEl) postImageEl.src = editPostImageInput.value.trim();
   editPostCaptionInput.value = postCaptionEl.textContent;
+  openModal(newPostModal);
 });
 
 newPostCloseBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 });
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
-
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 }
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
   editPostImageInput.value = postImageEl ? postImageEl.src : "";
   if (postImageEl) postImageEl.src = editPostImageInput.value.trim();
-
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 }
 editPostFormEl.addEventListener("submit", handleAddCardSubmit);
 editProfileFormEl.addEventListener("submit", handleProfileFormSubmit);
