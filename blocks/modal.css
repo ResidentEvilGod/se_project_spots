@@ -13,6 +13,10 @@
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
+.modal_type_preview {
+  padding: 16px;
+}
+
 .modal_is-opened {
   visibility: visible;
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
@@ -36,6 +40,11 @@
   background-image: url(../images/Close.svg);
   border: none;
   background-color: #fff;
+}
+
+.modal__close_type_preview {
+  top: 0;
+  right: -52.5;
 }
 
 .modal__title {
@@ -76,6 +85,23 @@
   border-radius: 8px;
 }
 
+.modal__image-container {
+  position: relative;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  color: white;
+}
+
 @media screen and (max-width: 320px) {
   .modal__submit-btn {
     width: 276px;
@@ -104,5 +130,16 @@
   .modal {
     max-width: 300;
     max-height: 336px;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .modal__close_type_preview {
+    top: -48px;
+    right: 0;
+  }
+
+  .modal__image {
+    max-width: unset;
   }
 }
