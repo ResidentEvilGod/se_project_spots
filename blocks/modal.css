@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition: visibility 0s linear 0.3s, opacity 0.3s ease-in;
 }
 
 .modal_type_preview {
@@ -19,7 +19,7 @@
 
 .modal_is-opened {
   visibility: visible;
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition: visibility 0s linear 0.3s, opacity 0.3s ease-in;
 }
 
 .modal__container {
@@ -42,9 +42,9 @@
   background-color: #fff;
 }
 
-.modal__close_type_preview {
+.modal__close-btn_type_preview {
   top: 0;
-  right: -52.5;
+  right: -52.5px;
 }
 
 .modal__title {
@@ -128,7 +128,7 @@
   }
 
   .modal {
-    max-width: 300;
+    max-width: 300px;
     max-height: 336px;
   }
 }

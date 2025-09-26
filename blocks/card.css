@@ -4,7 +4,7 @@
   object-fit: cover;
   display: block;
   margin-bottom: 12px;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .card__content {
@@ -20,6 +20,7 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+  cursor: pointer;
 }
 
 .card__like-btn_active {
@@ -38,6 +39,8 @@
   top: 10px;
   right: 10px;
   background-image: url(../images/State=Default.svg);
+  cursor: pointer;
+  background-repeat: no-repeat;
 }
 
 .card__title {
