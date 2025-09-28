@@ -43,11 +43,17 @@
 }
 
 .modal__close-btn_type_preview {
+  background-image: url(../images/Close.svg);
   top: 0;
   right: -52.5px;
+  opacity: 0.4;
 }
 
 .modal__title {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: #212121;
+  color: #ffffffff;
   margin: 0 0 32px;
 }
 

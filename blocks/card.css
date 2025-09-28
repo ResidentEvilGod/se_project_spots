@@ -36,11 +36,12 @@
   width: 32px;
   height: 32px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   background-image: url(../images/State=Default.svg);
   cursor: pointer;
   background-repeat: no-repeat;
+  transform: translate(10px, 10px);
 }
 
 .card__title {
