@@ -31,7 +31,7 @@
   position: relative;
 }
 
-.modal__close-btn {
+#image-preview-modal .modal__close-btn {
   position: absolute;
   top: 32px;
   right: 50px;
@@ -52,7 +52,6 @@
 .modal__title {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  background-color: #212121;
   color: #ffffffff;
   margin: 0 0 32px;
 }
@@ -143,6 +142,7 @@
   .modal__close_type_preview {
     top: -48px;
     right: 0;
+    background-color: #212121;
   }
 
   .modal__image {

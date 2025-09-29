@@ -1,3 +1,7 @@
+.card {
+  position: relative;
+}
+
 .card__image {
   height: 413px;
   width: 100%;
@@ -41,7 +45,6 @@
   background-image: url(../images/State=Default.svg);
   cursor: pointer;
   background-repeat: no-repeat;
-  transform: translate(10px, 10px);
 }
 
 .card__title {
