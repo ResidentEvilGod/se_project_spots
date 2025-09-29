@@ -31,8 +31,19 @@
   position: relative;
 }
 
-#image-preview-modal .modal__close-btn {
+.modal__close-btn {
   position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/Close.svg);
+  border: none;
+  background-color: #fff;
+}
+
+#image-preview-modal .modal__close-btn {
+  position: relative;
   top: 32px;
   right: 50px;
   width: 40px;

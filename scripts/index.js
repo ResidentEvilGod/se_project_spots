@@ -109,10 +109,10 @@ editProfileCloseBtn.addEventListener("click", function () {
 });
 
 newPostBtn.addEventListener("click", function () {
-  editPostImageInput.value = postImageEl ? postImageEl.src : "";
+  newPostImageInput.value = postImageEl ? postImageEl.src : "";
   if (postImageEl) postImageEl.src = editPostImageInput.value.trim();
-  editPostCaptionInput.value = "";
-  editPostImageInput.value = "";
+  newPostCaptionInput.value = "";
+  newPostImageInput.value = "";
   openModal(newPostModal);
 });
 
@@ -130,15 +130,15 @@ function handleProfileFormSubmit(evt) {
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
   const inputValues = {
-    name: editPostCaptionInput.value,
-    link: editPostImageInput.value,
+    name: newPostCaptionInput.value,
+    link: newPostImageInput.value,
   };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-  editPostFormEl.reset();
+  newPostFormEl.reset();
   closeModal(editProfileModal);
 }
-editPostFormEl.addEventListener("submit", handleAddCardSubmit);
+newPostFormEl.addEventListener("submit", handleAddCardSubmit);
 editProfileFormEl.addEventListener("submit", handleProfileFormSubmit);
 
 initialCards.forEach(function (inputValues) {
