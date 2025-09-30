@@ -44,12 +44,11 @@
 
 #preview-modal .modal__close-btn {
   top: 32px;
-  right: 50px;
+  left: 12.5px;
   width: 40px;
   height: 40px;
   background-image: url(../images/Property\ 1=Variant3.svg);
   border: none;
-  background-color: #fff;
 }
 
 .modal__close-btn_type_preview {
@@ -69,6 +68,9 @@
 #preview-modal .modal__title {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
   background-color: #212121;
   color: #ffffffff;
   padding: 4px 8px;
