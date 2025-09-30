@@ -42,7 +42,7 @@
   background-color: #fff;
 }
 
-#image-preview-modal .modal__close-btn {
+#preview-modal .modal__close-btn {
   position: relative;
   top: 32px;
   right: 50px;
@@ -63,6 +63,14 @@
 .modal__title {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
+  color: #212121;
+  margin: 0 0 32px;
+}
+
+#preview-modal .modal__title {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: #212121;
   color: #ffffffff;
   margin: 0 0 32px;
 }

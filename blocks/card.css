@@ -45,6 +45,8 @@
   background-image: url(../images/State=Default.svg);
   cursor: pointer;
   background-repeat: no-repeat;
+  border: none;
+  background-color: none;
 }
 
 .card__title {
