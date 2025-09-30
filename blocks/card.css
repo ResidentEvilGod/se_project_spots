@@ -49,6 +49,10 @@
   background-color: none;
 }
 
+.card__delete-btn:hover {
+  background-image: url(../images/State=Hover.svg);
+}
+
 .card__title {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
