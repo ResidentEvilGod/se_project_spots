@@ -44,11 +44,12 @@
 
 #preview-modal .modal__close-btn {
   top: 32px;
-  left: 12.5px;
+  left: 715px;
   width: 40px;
   height: 40px;
   background-image: url(../images/Property\ 1=Variant3.svg);
   border: none;
+  background-color: #212121;
 }
 
 .modal__close-btn_type_preview {
@@ -74,6 +75,7 @@
   background-color: #212121;
   color: #ffffffff;
   padding: 4px 8px;
+  max-width: fit-content;
 }
 
 .modal__form {
