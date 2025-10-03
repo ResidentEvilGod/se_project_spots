@@ -46,7 +46,8 @@
   cursor: pointer;
   background-repeat: no-repeat;
   border: none;
-  background-color: unset;
+  background-color: transparent;
+  background-size: contain;
 }
 
 .card__delete-btn:hover {
