@@ -114,7 +114,7 @@ newPostBtn.addEventListener("click", function () {
   if (postImageEl) postImageEl.src = editPostImageInput.value.trim();
   newPostCaptionInput.value = "";
   newPostImageInput.value = "";
-  resetValidation(editForm, [
+  resetValidation(newPostFormEl, [
     editProfileNameInput,
     editProfileDescriptionInput,
   ]);
