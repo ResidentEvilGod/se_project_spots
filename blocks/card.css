@@ -1,0 +1,70 @@
+.card {
+  position: relative;
+}
+
+.card__image {
+  height: 413px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__like-btn {
+  background-image: url(../images/Heart.svg);
+  width: 23px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  opacity: 40%;
+  cursor: pointer;
+}
+
+.card__like-btn_active {
+  background-image: url(../images/Union.svg);
+  opacity: 1;
+}
+
+.card__like-btn_active:hover {
+  opacity: 0.4;
+}
+
+.card__delete-btn {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url(../images/State=Default.svg);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+}
+
+.card__delete-btn:hover {
+  background-image: url(../images/State=Hover.svg);
+}
+
+.card__title {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #212121;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media screen and (max-width: 627px) {
+  .card__image {
+    height: 288px;
+  }
+}
