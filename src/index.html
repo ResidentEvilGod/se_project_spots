@@ -21,6 +21,11 @@
             alt="Profile image"
             class="profile__avatar"
           />
+          <button
+            class="profile__avatar-edit"
+            type="button"
+            aria-label="Edit avatar"
+          ></button>
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
@@ -136,6 +141,44 @@
           class="modal__image"
         />
         <p class="modal__title">Golden Gate Bridge</p>
+      </div>
+    </div>
+    <div class="modal" id="delete-modal">
+      <div class="modal__container">
+        <button
+          type="button"
+          class="modal__close-btn"
+          aria-label="Close"
+        ></button>
+        <h2 class="modal__title">Are you sure?</h2>
+        <form class="modal__form" novalidate>
+          <p class="modal__text">This action cannot be undone.</p>
+          <button type="submit" class="modal__submit-btn">Yes, delete</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="edit-avatar-modal">
+      <div class="modal__container">
+        <button
+          type="button"
+          class="modal__close-btn"
+          aria-label="Close"
+        ></button>
+        <h2 class="modal__title">Change profile picture</h2>
+        <form class="modal__form" novalidate>
+          <label for="avatar-url-input" class="modal__label">
+            Image link
+            <input
+              id="avatar-url-input"
+              type="url"
+              class="modal__input"
+              placeholder="Place a link to the picture"
+              required
+            />
+            <span id="avatar-url-input-error" class="modal__error"></span>
+          </label>
+          <button type="submit" class="modal__submit-btn">Save</button>
+        </form>
       </div>
     </div>
   </body>
