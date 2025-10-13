@@ -11,6 +11,12 @@
   width: 190px;
 }
 
+.profile__avatar-edit {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
 .profile__column {
   display: flex;
   flex-direction: column;
