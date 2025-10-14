@@ -4,7 +4,10 @@ import Api from "../utils/Api.js";
 
 const api = new Api({
   baseUrl: "https://around-api.en.tripleten-services.com/v1",
-  token: "d41c5de4-a60c-4cba-8b57-bb0d7fcd07f2",
+  header: {
+    authorization: "ed13d0dd-032a-4767-9022-f3b0eae47e49",
+    "Content-Type": "application/json",
+  },
 });
 
 function setButtonLoading(

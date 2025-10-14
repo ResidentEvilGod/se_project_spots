@@ -1,9 +1,9 @@
 class Api {
-  constructor({ baseUrl, headers }) {
+  constructor(baseUrl, headers, token) {
     this._baseUrl = baseUrl;
     this._headers = headers;
+    this._token = token;
   }
-
   _handleServerResponse(res) {
     if (res.ok) {
       return res.json();
