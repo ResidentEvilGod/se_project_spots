@@ -298,5 +298,3 @@ Promise.all([api.getUserInfo(), api.getInitialCards()])
     console.error("Error loading initial data:", err);
     alert("Failed to load data from server. Please try again later.");
   });
-
-export { resetValidation };
