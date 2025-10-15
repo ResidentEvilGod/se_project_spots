@@ -1,8 +1,7 @@
 class Api {
-  constructor(baseUrl, headers, token) {
+  constructor({ baseUrl, headers }) {
     this._baseUrl = baseUrl;
     this._headers = headers;
-    this._token = token;
   }
   _handleServerResponse(res) {
     if (res.ok) {
@@ -11,13 +10,14 @@ class Api {
     return Promise.reject(`Error: ${res.status}`);
   }
   getUserInfo() {
-    return fetch(`${this._baseUrl}/users/me`, {
-      method: "GET",
-      headers: {
-        authorization: this._token,
-        "Content-Type": "application/json",
-      },
-    }).then((res) => this._handleServerResponse(res));
+    return fetch(`${this._baseUrl}/users`, {
+      headers: this._headers,
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      Promise.reject(`error: ${res.status}`);
+    });
   }
   editUserInfo({ name, about }) {
     return fetch(`${this._baseUrl}/users/me`, {
@@ -31,12 +31,13 @@ class Api {
   }
   getInitialCards() {
     return fetch(`${this._baseUrl}/cards`, {
-      method: "GET",
-      headers: {
-        authorization: this._token,
-        "Content-Type": "application/json",
-      },
-    }).then((res) => this._handleServerResponse(res));
+      headers: this._headers,
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      Promise.reject(`error: ${res.status}`);
+    });
   }
   addNewCard({ name, link }) {
     return fetch(`${this._baseUrl}/cards`, {

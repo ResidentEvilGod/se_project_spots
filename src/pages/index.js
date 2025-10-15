@@ -4,8 +4,8 @@ import Api from "../utils/Api.js";
 
 const api = new Api({
   baseUrl: "https://around-api.en.tripleten-services.com/v1",
-  header: {
-    authorization: "ed13d0dd-032a-4767-9022-f3b0eae47e49",
+  headers: {
+    authorization: "483f901d-d1a8-4316-9205-32b3d8e28949",
     "Content-Type": "application/json",
   },
 });
