@@ -10,7 +10,7 @@ class Api {
     return Promise.reject(`Error: ${res.status}`);
   }
   getUserInfo() {
-    return fetch(`${this._baseUrl}/users`, {
+    return fetch(`${this._baseUrl}/users/me`, {
       headers: this._headers,
     }).then((res) => {
       if (res.ok) {

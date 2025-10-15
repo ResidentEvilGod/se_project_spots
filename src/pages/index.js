@@ -41,7 +41,7 @@ const previewImageEl = previewModal.querySelector(".modal__image");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewNameEl = previewModal.querySelector(".modal__title");
 
-const deleteModal = document.querySelector("#delete-modal");
+const deleteModal = document.querySelector(".delete__modal");
 const deleteForm = deleteModal?.querySelector(".modal__form");
 const deleteSubmitBtn = deleteModal?.querySelector(".modal__submit-btn");
 const deleteCloseBtn = deleteModal?.querySelector(".modal__close-btn");

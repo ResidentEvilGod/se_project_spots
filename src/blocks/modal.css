@@ -134,6 +134,10 @@
   opacity: 50%;
 }
 
+.modal__delete-btn {
+  background-color: red;
+}
+
 .modal__image-container {
   position: relative;
 }
