@@ -299,4 +299,4 @@ Promise.all([api.getUserInfo(), api.getInitialCards()])
     alert("Failed to load data from server. Please try again later.");
   });
 
-enableValidation(settings);
+export { resetValidation };
