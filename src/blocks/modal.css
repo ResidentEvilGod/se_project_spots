@@ -135,7 +135,11 @@
 }
 
 .modal__delete-btn {
-  background-color: red;
+  background-color: rgba(255, 101, 101, 1);
+  padding: 18px, 32px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .modal__image-container {
