@@ -45,9 +45,9 @@ const previewImageEl = previewModal.querySelector(".modal__image");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewNameEl = previewModal.querySelector(".modal__title");
 
-const deleteModal = document.querySelector("#modal__delete");
-const deleteForm = deleteModal?.querySelector(".modal__form");
-const deleteSubmitBtn = deleteModal?.querySelector(".modal__submit-btn");
+const deleteModal = document.querySelector("#delete__modal");
+const deleteSubmitBtn = deleteModal?.querySelector(".modal__delete-btn");
+const deleteCancelBtn = deleteModal?.querySelector(".modal__cancel-btn");
 const deleteCloseBtn = deleteModal?.querySelector(".modal__close-btn");
 
 const editProfileBtn = document.querySelector(".profile__edit-btn");
@@ -87,6 +87,8 @@ if (avatarEditBtn)
 
 if (deleteCloseBtn)
   deleteCloseBtn.addEventListener("click", () => closeModal(deleteModal));
+if (deleteCancelBtn)
+  deleteCancelBtn.addEventListener("click", () => closeModal(deleteModal));
 
 previewModalCloseBtn.addEventListener("click", () => closeModal(previewModal));
 
@@ -160,7 +162,7 @@ function handleDeleteSubmit(evt) {
     return;
   }
 
-  setButtonLoading(deleteSubmitBtn, true, "Deleting...", "Yes, delete");
+  setButtonLoading(deleteSubmitBtn, true, "Deleting...", "Delete");
 
   const promise = selectedCardId
     ? api.deleteCard(selectedCardId)
@@ -178,11 +180,12 @@ function handleDeleteSubmit(evt) {
       alert("Could not delete the card. Please try again.");
     })
     .finally(() =>
-      setButtonLoading(deleteSubmitBtn, false, "Deleting...", "Yes, delete")
+      setButtonLoading(deleteSubmitBtn, false, "Deleting...", "Delete")
     );
 }
 
-if (deleteForm) deleteForm.addEventListener("submit", handleDeleteSubmit);
+if (deleteSubmitBtn)
+  deleteSubmitBtn.addEventListener("click", handleDeleteSubmit);
 
 function handleAvatarSubmit(evt) {
   evt.preventDefault();
